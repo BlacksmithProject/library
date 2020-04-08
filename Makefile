@@ -25,6 +25,6 @@ test-CI:
 CI: stan test-CI
 
 release:
-	git add CHANGELOG.md && git commit -m "release(v$(VERSION))" && git tag v$(VERSION) && git push && git push --tags
+	git add CHANGELOG.md && git commit -m "release($(VERSION))" && git tag $(VERSION) && git push && git push --tags
 
 .PHONY: dev-from-scratch composer pretty pretty-fix stan test infection test-CI CI release
