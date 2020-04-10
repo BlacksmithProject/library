@@ -5,6 +5,8 @@
 - [ ] You should modify `composer.json` and update `name`, `description`, `authors` and namespaces in `autoload`/`autoload-dev`.
 - [ ] You should modify this `README.md`.
 
+## TOOLING
+
 Contains:
 
 - `phpcs`
