@@ -10,7 +10,6 @@
 Contains:
 
 - `phpcs`
-- `pretty`
 - `phpstan`
 - `phpunit`
 - `infection`
@@ -19,8 +18,8 @@ Contains:
 
 Use:
 
-- `make pretty` to use `phpcs`
-- `make pretty-fix` to fix
+- `make phpcs` to use `phpcs`
+- `make phpcs-fix` to fix
 - `make stan` to use `phpstan`
 - `make test` to use `phpunit`
 - `make infection` to use `infection`
