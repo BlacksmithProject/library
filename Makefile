@@ -4,11 +4,11 @@ composer:
 	-rm -rf ./vendor
 	-a | composer install
 
-pretty:
-	./vendor/bin/pretty
+phpcs:
+    ./vendor/bin/phpcs
 
-pretty-fix:
-	./vendor/bin/pretty fix
+phpcs-fix:
+    ./vendor/bin/phpcbf
 
 stan:
 	./vendor/bin/phpstan analyse -l 7 src
@@ -27,4 +27,4 @@ CI: stan test-CI
 release:
 	git add CHANGELOG.md && git commit -m "release($(VERSION))" && git tag $(VERSION) && git push && git push --tags
 
-.PHONY: dev-from-scratch composer pretty pretty-fix stan test infection test-CI CI release
+.PHONY: dev-from-scratch composer phpcs phpcs-fix stan test infection test-CI CI release
